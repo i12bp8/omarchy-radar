@@ -43,6 +43,26 @@ move it with `omarchy bar move wolfs.radar --section left`.
 Plugins run unsandboxed inside the long-lived shell with your user
 permissions. Review and trust the source before enabling it.
 
+### Remove
+
+```bash
+omarchy plugin remove wolfs.radar
+```
+
+Removal deletes the plugin folder only. Radar's local history is not
+touched — it stays in `~/.local/share/wolfs.radar/history.json`, which you
+can delete by hand (or clear from inside the panel beforehand). Radar never
+modifies Omarchy's own configuration files.
+
+## Requirements and dependencies
+
+- Omarchy 4 (manifest schema 1) with Quickshell plugin support.
+- At runtime: `wl-copy` (wl-clipboard) for copy actions and `xdg-open`
+  (xdg-utils) for opening links — both ship with a standard Omarchy
+  install. Everything else is Qt/Quickshell built-ins.
+- Data sources are the public web APIs shown in the results; none require
+  an account or API key, and no third-party code or binary is bundled.
+
 ## Use
 
 1. Click the radar icon (or summon with `omarchy-shell shell summon wolfs.radar '{}'`).
