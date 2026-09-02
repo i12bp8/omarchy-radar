@@ -1,4 +1,4 @@
-# Radar
+# OmarchyOSINT
 
 An OSINT lookup widget for the Omarchy bar. Type a username, an email, an
 IP address, or a domain; Radar sweeps several public sources in parallel
