@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "wolfs.radar",
+  "name": "Radar",
+  "version": "0.1.0",
+  "author": "I12BP8",
+  "license": "MIT",
+  "description": "OSINT lookups from the bar: usernames, emails, IPs, domains.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Radar",
+    "description": "One-click OSINT lookups: username, email, IP, domain.",
+    "category": "Security",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "historySize": 8
+    },
+    "schema": [
+      {
+        "key": "historySize",
+        "type": "number",
+        "label": "Remember this many past lookups",
+        "defaultValue": 8
+      }
+    ]
+  }
+}

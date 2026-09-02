@@ -1,0 +1,1 @@
+{"Status":0,"TC":false,"RD":true,"RA":true,"AD":true,"CD":false,"Question":[{"name":"example.org.","type":16}],"Answer":[{"name":"example.org.","type":16,"TTL":300,"data":"v=spf1 -all"},{"name":"example.org.","type":16,"TTL":300,"data":"_uyh0vgv5ukyofwj3ddwspnni01vmlyy"}],"Comment":"Response from 108.162.194.235."}

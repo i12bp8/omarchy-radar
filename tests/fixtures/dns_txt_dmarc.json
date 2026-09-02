@@ -1,0 +1,1 @@
+{"Status":0,"TC":false,"RD":true,"RA":true,"AD":false,"CD":false,"Question":[{"name":"_dmarc.google.com.","type":16}],"Answer":[{"name":"_dmarc.google.com.","type":16,"TTL":300,"data":"v=DMARC1; p=reject; rua=mailto:mailauth-reports@google.com"}],"Comment":"Response from 216.239.38.10."}

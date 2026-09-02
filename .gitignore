@@ -1,0 +1,9 @@
+# build and editor noise
+target/
+node_modules/
+*.log
+
+# local test state
+research/
+tests/tmp/
+shots/

@@ -1,0 +1,1 @@
+{"Status":0,"TC":false,"RD":true,"RA":true,"AD":false,"CD":false,"Question":[{"name":"8.8.8.8.in-addr.arpa.","type":12}],"Answer":[{"name":"8.8.8.8.in-addr.arpa.","type":12,"TTL":10679,"data":"dns.google."}]}

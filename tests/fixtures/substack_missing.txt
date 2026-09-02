@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="norton-safeweb-site-verification" content="24usqpep0ejc5w6hod3dulxwciwp0djs6c6ufp96av3t4whuxovj72wfkdjxu82yacb7430qjm8adbd5ezlt4592dq4zrvadcn9j9n-0btgdzpiojfzno16-fnsnu7xd" />
+        
+        
+        <link rel="preconnect" href="https://substackcdn.com" />
+        
+
+        
+            <title data-rh="true">Not Found</title>
+            
+            <meta data-rh="true" property="og:type" content="article"/><meta data-rh="true" property="og:title" content="Not Found"/><meta data-rh="true" name="twitter:title" content="Not Found"/>
+            
+            
+        
+
+        
+
+        <style>
+          @layer legacy, tailwind, pencraftReset, pencraft;
+        </style>
+
+        
+        <link rel="preload" as="style" href="https://substackcdn.com/bundle/theme/main.5963dfe1ab547f171839.css" />
+        
+        
+        
+        <link rel="preload" as="font" href="https://fonts.gstatic.com/s/spectral/v13/rnCr-xNNww_2s0amA9M5knjsS_ul.woff2" crossorigin />
+        
+
+        
+            
+                <link rel="stylesheet" type="text/css" href="https://substackcdn.com/bundle/static/css/11100.0034592a.css" />
+            
+                <link rel="stylesheet" type="text/css" href="https://substackcdn.com/bundle/static/css/92530.1f488afa.css" />
+            
+                <link rel="stylesheet" type="text/css" href="https://substackcdn.com/bundle/static/css/48928.802eea2f.css" />
+            
+                <link rel="stylesheet" type="text/css" href="https://substackcdn.com/bundle/static/css/58488.50b30f9b.css" />
+            
+                <link rel="stylesheet" type="text/css" href="https://substackcdn.com/bundle/static/css/42118.cba90b72.css" />
+            
+                <link rel="stylesheet" type="text/css" href="https://substackcdn.com/bundle/static/css/99310.05bd163d.css" />
+            
+                <link rel="stylesheet" type="text/css" href
