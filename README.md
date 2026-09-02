@@ -5,7 +5,7 @@ IP address, or a domain; Radar sweeps several public sources in parallel
 and shows you what is publicly attached to that target — in a few seconds,
 from your machine, with no account and no API key.
 
-![Radar sweep](assets/icon.svg)
+![Radar sweep](preview.png)
 
 ## What it checks
 
