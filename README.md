@@ -28,6 +28,15 @@ Each check reports `found`, `absent`, or `error` with a plain-English
 explanation, so a finished sweep is a transparent log of what was asked and
 what came back. Values copy on click; URL rows open in your browser.
 
+
+### Deep scan hand-off (optional)
+
+Set **Deep scan command** in the widget settings to hand the current target to
+a heavier tool. The target is appended as one shell-quoted argument, and a
+"deep scan" link appears in the results footer. Empty (the default) hides it.
+For example, with SpiderFoot behind a small wrapper script:
+`~/.local/bin/spiderfoot scan`.
+
 ## Install
 
 Requires Omarchy 4 (manifest schema 1) with Quickshell plugin support.

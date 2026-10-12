@@ -169,6 +169,16 @@ Panel {
         showToast(message || "Copied to clipboard");
     }
 
+    // Optional hand-off to a heavier tool (e.g. SpiderFoot), set in widget settings.
+    readonly property string deepScanCommand: String(root.settings && root.settings.deepScanCommand || "").trim()
+
+    function deepScan() {
+        if (!currentTarget || deepScanCommand === "")
+            return;
+        Quickshell.execDetached(["bash", "-c", deepScanCommand + " " + Util.shellQuote(currentTarget.value)]);
+        showToast("Deep scan started");
+    }
+
     function copyReport() {
         if (!currentTarget)
             return;
@@ -188,8 +198,12 @@ Panel {
     // explicitly after every model change instead of through bindings.
     function refit() {
         Qt.callLater(function () {
-            var res = Math.min(Style.space(760), Math.max(Style.space(90), resultsColumn.implicitHeight));
-            var rec = Math.min(Style.space(760), Math.max(Style.space(90), recentsColumn.implicitHeight));
+            // Cap the scrolling body so header and footer still fit on short screens.
+            var cap = Style.space(760);
+            if (panel.availableCardHeight > 0)
+                cap = Math.max(Style.space(90), Math.min(cap, panel.availableCardHeight - panel.verticalContentInset - (contentColumn.implicitHeight - bodyItem.height)));
+            var res = Math.min(cap, Math.max(Style.space(90), resultsColumn.implicitHeight));
+            var rec = Math.min(cap, Math.max(Style.space(90), recentsColumn.implicitHeight));
             resultsFlick.height = res;
             recentsFlick.height = rec;
             resultsFlick.contentHeight = resultsColumn.implicitHeight;
@@ -765,6 +779,24 @@ Panel {
                                 hoverEnabled: true
                                 cursorShape: Qt.PointingHandCursor
                                 onClicked: root.copyReport()
+                            }
+                        }
+
+                        Text {
+                            anchors.verticalCenter: parent.verticalCenter
+                            visible: root.deepScanCommand !== ""
+                            text: "deep scan"
+                            color: deepHover.containsMouse ? root.contentForeground : Qt.darker(root.contentForeground, 1.6)
+                            font.family: root.contentFontFamily
+                            font.pixelSize: Style.font.caption
+                            font.underline: deepHover.containsMouse
+
+                            MouseArea {
+                                id: deepHover
+                                anchors.fill: parent
+                                hoverEnabled: true
+                                cursorShape: Qt.PointingHandCursor
+                                onClicked: root.deepScan()
                             }
                         }
 
